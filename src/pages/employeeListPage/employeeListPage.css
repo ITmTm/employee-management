@@ -21,5 +21,9 @@
 .employee-list-page .add-employee-button:hover {
   background-color: #145ca4;
 }
+.employee-list-page .add-employee-button:active {
+  transform: scale(0.95);
+  background-color: #155a9c;
+}
 
 /*# sourceMappingURL=employeeListPage.css.map */

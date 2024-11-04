@@ -25,5 +25,10 @@ $primary-color: #1976d2;
     &:hover {
       background-color: color.adjust($primary-color, $lightness: -10%);
     }
+
+    &:active {
+      transform: scale(0.95);
+      background-color: #155a9c;
+    }
   }
 }
