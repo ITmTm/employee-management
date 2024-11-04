@@ -1,0 +1,31 @@
+.employee-filter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: space-between;
+
+  label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+
+    select {
+      margin-left: 3.5rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+
+      &:focus {
+        outline-color: rgba(0, 0, 0, 0);
+        box-shadow: 0 0 8px rgba(25, 118, 210, 0.6);
+      }
+    }
+
+    input[type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+  }
+}
