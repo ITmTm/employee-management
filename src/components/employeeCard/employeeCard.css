@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.employee-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  animation: fadeIn 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.8rem;
+}
+.employee-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.employee-card h2 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 0;
+}
+.employee-card p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 400;
+}
+.employee-card p a {
+  color: #1976d2;
+  font-weight: 500;
+}
+.employee-card p a:hover {
+  text-decoration: underline;
+}
+.employee-card.archived {
+  background-color: #f8f8f8;
+  border: 2px dashed #888;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.employee-card.archived h2 {
+  color: #888;
+}
+.employee-card.archived:before {
+  content: "Архив";
+  animation: fadeIn 0.5s ease-in-out;
+  display: block;
+  font-size: 0.75rem;
+  color: #ff2600;
+  font-weight: 600;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.edit-button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.edit-button:hover {
+  background-color: #155a8a;
+}
+.edit-button:active {
+  transform: scale(0.95);
+  background-color: #155a9c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .employee-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=employeeCard.css.map */
