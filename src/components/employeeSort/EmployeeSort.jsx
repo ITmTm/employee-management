@@ -1,11 +1,11 @@
 import {useDispatch, useSelector} from "react-redux";
-import { setSort } from "../../redux/employeeSlice.js";
+import { setSort, selectSort } from "../../redux/employeeSlice.js";
 
 import './employeeSort.scss';
 
 const EmployeeSort = () => {
-	const dispatch = useDispatch();
-	const sort = useSelector((state) => state.employees.sort);
+	const dispatch = useDispatch() ;
+	const sort = useSelector(selectSort) || { by: 'name', direction: 'asc' };
 
 	const handleSortChange = (e) => {
 		dispatch(setSort({ ...sort, by: e.target.value }));
