@@ -1,6 +1,6 @@
 # 🧮 Employee Management SPA
 
-![Employee Management Demo]()
+![Employee Management Demo](https://github.com/user-attachments/assets/b8c22166-f2f5-4923-8d63-1428d16ccef5)
 
 > Employee Management SPA – это приложение для управления сотрудниками с возможностями добавления, редактирования, фильтрации и сортировки.
 
