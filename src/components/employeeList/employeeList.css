@@ -5,4 +5,21 @@
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .employee-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .employee-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 576px) {
+  .employee-list {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
 /*# sourceMappingURL=employeeList.css.map */
