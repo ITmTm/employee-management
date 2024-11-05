@@ -16,13 +16,17 @@ const EmployeeList = () => {
 
     return (
         <div className='employee-list'>
-            {filteredEmployees.map((employee) => (
+            {filteredEmployees.length === 0 ? (
+              <p>Нет сотрудников для отображения</p>
+            ) : (
+              filteredEmployees.map((employee) => (
                 <EmployeeCard
                   key={employee.id}
                   employee={employee}
-                  isArchiveActive={isArchiveActive}    // Передача статуса чекбокса в 'архив'
+                  isArchiveActive={isArchiveActive}
                 />
-            ))}
+              ))
+            )}
         </div>
     );
 };
