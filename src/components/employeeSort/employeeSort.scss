@@ -1,3 +1,7 @@
+@use 'sass:color';
+$primary-color: #1976d2;
+
+
 .employee-sort {
 	display: flex;
 	align-items: center;
@@ -21,14 +25,14 @@
 
 	button {
 		padding: 0.7rem 1rem;
-		background-color: #1976d2;
+		background-color: $primary-color;
 		color: #fff;
 		border: none;
 		border-radius: 4px;
 		cursor: pointer;
 
 		&:hover {
-			background-color: darken(#1976d2, 10%);
+			background-color: color.adjust($primary-color, $lightness: 10%);
 		}
 	}
 }
